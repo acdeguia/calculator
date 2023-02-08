@@ -25,7 +25,7 @@ body {
   gap: 10px;
 }
 
-.screen {
+#display-screen {
   gap: 10px;
   width: 340px;
   height: 141px;
@@ -34,11 +34,12 @@ body {
   background: #a3b9aa;
 }
 
-.button {
+.btn {
   background-color: #bfc0bc;
   border: none;
   width: 55px;
   height: 55px;
+  cursor: pointer;
 
 }
 
@@ -67,10 +68,21 @@ body {
   border: none;
 }
 
-.button, .equal {
+.btn, .equal {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     border-radius: 50px;
 }
+
+#display-screen {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.current-display{
+  height: 100px;
+}
+

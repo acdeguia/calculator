@@ -51,6 +51,16 @@ function operate() {
 
   for (i of btns) {
     i.addEventListener('click', function() {
-      console.log(this);
+      console.log(i);
     });
   }
+
+  const buttons = document.getElementById('buttons');
+
+  buttons.addEventListener('click', (event) => {
+    const isButton = event.target.nodeName === 'BUTTON';
+    if (!isButton) {
+      return;
+    }
+    currentDisplay.innerHTML = event.target.value;
+  })

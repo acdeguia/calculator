@@ -2,44 +2,7 @@ let displayScreen = document.querySelector('#display-screen')
 let currentDisplay = document.querySelector('.current-display')
 let resultDisplay = document.querySelector('.result-display')
 
-function add(num1, num2) {
-  let totalSum = Number(num1) + Number(num2);
-  resultDisplay.innerHTML = totalSum
-}
 
-function subtract(minuend, subtrahend) {
-  let difference = minuend - subtrahend;
-  resultDisplay.innerHTML = difference
-}
-
-function multiply(num1, num2) {
-  let product = num1 * num2;
-  resultDisplay.innerHTML = product
-}
-
-function divide(divisor, dividend) {
-  let quotient = divisor / dividend;
-  resultDisplay.innerHTML = quotient
-}
-
-function operate() {
-  let num1 = Number(prompt("Enter first num: "));
-
-  let operation = prompt("enter operation: ").toLowerCase();
-  let num2 = Number(prompt("enter second num: "));
-
-  if (operation === "+") {
-    add(num1, num2);
-  } else if (operation === "-") {
-    subtract(num1, num2);
-  } else if (operation === "*") {
-    multiply(num1, num2);
-  } else if (operation === "/") {
-    divide(num1, num2);
-  } else {
-    alert("not valid operation");
-  }
-}
 
   let clearScreen = document.querySelector('#clear')
   clearScreen.addEventListener('click', () => {
@@ -64,3 +27,57 @@ function operate() {
     }
     currentDisplay.innerHTML = event.target.value;
   })
+
+  let equal = document.getElementById('equal');
+
+
+
+
+
+
+
+equal.addEventListener('click', () => {
+  resultDisplay.innerHTML = result
+})
+
+
+function operate() {
+  let num1 = Number(prompt("Enter first num: "));
+
+  let operation = prompt("enter operation: ").toLowerCase();
+  let num2 = Number(prompt("enter second num: "));
+
+  if (operation === "+") {
+    add(num1, num2);
+  } else if (operation === "-") {
+    subtract(num1, num2);
+  } else if (operation === "*") {
+    multiply(num1, num2);
+  } else if (operation === "/") {
+    divide(num1, num2);
+  } else {
+    alert("not valid operation");
+  }
+}
+
+function add(num1, num2) {
+  let totalSum = Number(num1) + Number(num2);
+  result = totalSum
+}
+
+function subtract(minuend, subtrahend) {
+  let difference = minuend - subtrahend;
+  result = difference
+}
+
+function multiply(num1, num2) {
+  let product = num1 * num2;
+  result = product
+}
+
+function divide(divisor, dividend) {
+  let quotient = divisor / dividend;
+  result = quotient
+}
+
+operate()

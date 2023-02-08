@@ -42,7 +42,7 @@ body {
 
 
 
-.btn {
+.btn, .btn-operator, .btn-clear, .btn-del{
   background-color: #bfc0bc;
   border: none;
   width: 55px;
@@ -76,7 +76,7 @@ body {
   border: none;
 }
 
-.btn, .equal {
+.btn, .equal, .btn-operator, .btn-clear, .btn-del {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

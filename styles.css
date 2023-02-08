@@ -18,7 +18,6 @@ body {
   height: 714px;
   border-radius: 40px;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   padding: 44px 38px;
@@ -26,13 +25,22 @@ body {
 }
 
 #display-screen {
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
   width: 340px;
   height: 141px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   background: #a3b9aa;
+  padding: 25px;
+  align-items: flex-end;
 }
+
+.current-display{
+  height: 60px;
+}
+
+
 
 .btn {
   background-color: #bfc0bc;
@@ -74,15 +82,5 @@ body {
     font-weight: 400;
     font-size: 35px;
     border-radius: 50px;
-}
-
-#display-screen {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-}
-
-.current-display{
-  height: 100px;
 }
 

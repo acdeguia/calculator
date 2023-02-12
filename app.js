@@ -51,9 +51,9 @@ function evaluate() {
     console.log(currentOperation)
     num2 = currentDisplay.textContent
     console.log(num2)
-    operate(currentOperation, num1, num2)
-    previousDisplay.textContent = num1 + operator + num2
-    
+   
+    previousDisplay.textContent = num1 + currentOperation + num2
+    currentDisplay.innerHTML =  operate(currentOperation, num1, num2)
 }
 
 function add(num1, num2) {

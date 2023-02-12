@@ -1,4 +1,6 @@
 let clear = document.querySelector('#clear')
+let equalsBtn = document.querySelector('#equals')
+
 let previousDisplay = document.querySelector('#previous-display')
 let currentDisplay = document.querySelector('#current-display')
 
@@ -33,6 +35,10 @@ function operation (operator) {
     currentDisplay.innerHTML = operator
 }
 
+function evaluate() {
+    num2 = currentDisplay.textContent
+    operate(currentOperation, num1, num2)
+}
 
 function add(num1, num2) {
     return num1 + num2;

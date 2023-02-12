@@ -1,4 +1,5 @@
 let clear = document.querySelector("#clear");
+let del = document.querySelector(".btn-del")
 let equalsBtn = document.querySelector("#equals");
 let previousDisplay = document.querySelector("#previous-display");
 let currentDisplay = document.querySelector("#current-display");
@@ -13,6 +14,7 @@ let currentOperation = "";
 
 clear.addEventListener("click", clearScreen);
 equalsBtn.addEventListener("click", evaluate);
+del.addEventListener('click', deleteNum)
 
 buttons.addEventListener("click", (event) => {
   const isButton = event.target.className === "btn";
@@ -33,6 +35,12 @@ buttons.addEventListener("click", (event) => {
 function clearScreen() {
   previousDisplay.innerHTML = "0";
   currentDisplay.innerHTML = "";
+}
+
+function deleteNum() {
+    currentDisplay.textContent = currentDisplay.textContent
+    .toString()
+    .slice(0, -1)
 }
 
 function operand(num) {

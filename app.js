@@ -33,19 +33,27 @@ buttons.addEventListener("click", (event) => {
     operation(event.target.textContent);
   });
 
+
+  function operand(num) {
+    currentDisplay.innerHTML += num
+  }
+
+
 function operation (operator) {
-    let num1 = currentDisplay.textContent;
+    num1 = currentDisplay.textContent;
     console.log(num1)
     currentOperation = operator
-    console.log(currentOperation)
     previousDisplay.textContent = num1 + currentOperation
     currentDisplay.innerHTML = ''
 }
 
 function evaluate() {
+    console.log(currentOperation)
     num2 = currentDisplay.textContent
     console.log(num2)
     operate(currentOperation, num1, num2)
+    previousDisplay.textContent = num1 + operator + num2
+    
 }
 
 function add(num1, num2) {
@@ -69,25 +77,22 @@ function add(num1, num2) {
     num2 = Number(num2)
     switch(operator) {
         case '+':
-            return add(num1, num2)
+            return  add(num1, num2)
         case '-':
-            return add(num1, num2)
+            return  substract(num1, num2)
         case '*':
-            return add(num1, num2)
+            return  multiply(num1, num2)
         case '/':
             if(num2 === 0) return null
-            else return divide(num1, num2)
+            else return  divide(num1, num2)
         default:
             return null        
     }
+
   }
 
   function clearScreen() {
     previousDisplay.innerHTML = '0'
     currentDisplay.innerHTML = ''
-  }
-
-  function operand(num) {
-    currentDisplay.innerHTML += num 
   }
 

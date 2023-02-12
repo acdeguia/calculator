@@ -10,7 +10,12 @@ let operatorBtn = document.querySelector('.btn-operator')
 let currentOperation = ''
 const buttons = document.getElementById("buttons");
 
+let shouldResetScreen = false;
+let num1 = ''
+let num2 = ''
+
 clear.addEventListener('click', clearScreen)
+equalsBtn.addEventListener('click', evaluate)
 
 buttons.addEventListener("click", (event) => {
     const isButton = event.target.className === "btn";
@@ -30,13 +35,16 @@ buttons.addEventListener("click", (event) => {
 
 function operation (operator) {
     let num1 = currentDisplay.textContent;
+    console.log(num1)
     currentOperation = operator
+    console.log(currentOperation)
     previousDisplay.textContent = num1 + currentOperation
-    currentDisplay.innerHTML = operator
+    currentDisplay.innerHTML = ''
 }
 
 function evaluate() {
     num2 = currentDisplay.textContent
+    console.log(num2)
     operate(currentOperation, num1, num2)
 }
 

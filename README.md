@@ -1,3 +1,10 @@
-# calculator
+# Calculator
 
-https://acdeguia.github.io/calculator/
+<br />
+
+⟱⟱⟱⟱⟱⟱
+
+[Live preview](https://acdeguia.github.io/calculator/)
+
+<hr>
+

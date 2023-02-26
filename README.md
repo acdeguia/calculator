@@ -2,9 +2,9 @@
 
 <br />
 
-⟱⟱⟱⟱⟱⟱
+⟱⟱⟱⟱⟱⟱⟱⟱⟱
 
-[Live preview](https://acdeguia.github.io/calculator/)
+[Live preview link](https://acdeguia.github.io/calculator/)
 
 <hr>
 

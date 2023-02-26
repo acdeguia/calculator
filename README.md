@@ -8,3 +8,4 @@
 
 <hr>
 
+![screenshot](https://github.com/acdeguia/calculator/blob/main/images/calculator.jpeg)

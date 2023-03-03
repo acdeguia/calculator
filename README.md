@@ -1,7 +1,7 @@
 # Calculator
 ⟱⟱⟱⟱⟱⟱⟱
 <br />
-[Live preview link](https://acdeguia.github.io/calculator/)
+[LIVE DEMO](https://acdeguia.github.io/calculator/)
 
 ![screenshot](https://github.com/acdeguia/calculator/blob/main/images/calculator.jpeg)
 

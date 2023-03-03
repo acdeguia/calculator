@@ -1,5 +1,5 @@
 # Calculator
-⟱⟱⟱⟱⟱⟱⟱
+⟱⟱⟱⟱⟱
 <br />
 [LIVE DEMO](https://acdeguia.github.io/calculator/)
 

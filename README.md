@@ -1,4 +1,4 @@
-# TOP: Calculator project
+## TOP: Calculator project
 ⟱⟱⟱
 <br />
 [LIVE DEMO](https://acdeguia.github.io/calculator/)
